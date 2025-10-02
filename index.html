@@ -378,6 +378,7 @@ footer {
     audio.play().catch(() => {
       // if autoplay is blocked, wait for user click
       document.body.addEventListener("click", () => {
+		audio.volume = 0.5;
         audio.play();
       }, { once: true });
     });
@@ -385,6 +386,7 @@ footer {
   </script>
 </body>
 </html>
+
 
 
 
