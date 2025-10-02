@@ -374,6 +374,7 @@ footer {
 
 	   window.addEventListener('load', () => {
     const audio = document.getElementById("bg-music");
+	audio.volume = 0.5;
     audio.play().catch(() => {
       // if autoplay is blocked, wait for user click
       document.body.addEventListener("click", () => {
@@ -384,5 +385,6 @@ footer {
   </script>
 </body>
 </html>
+
 
 
